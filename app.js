@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 
 const Blog = require('./modals/blog');
 
-const DBURI = 'mongodb+srv://aeghprs:aeghprs@cluster0.b9cgb.mongodb.net/lab?retryWrites=true&w=majority'
+const DBURI = 'mongodb+srv://aeghprs:<password>@cluster0.b9cgb.mongodb.net/lab?retryWrites=true&w=majority'
 mongoose.connect(DBURI)
 .then((result) => app.listen(7000))
 .catch((err)=>console.log("err detected"));
